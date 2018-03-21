@@ -34,3 +34,14 @@ to **hw@contactually.com**.
 
 **NOTE:**
 Your application *does not* need to handle authentication or authorization.
+
+
+##### Checklist
+[x] Upload via web form
+[x] Create all contacts
+[x] Display all contacts
+[x] Specs for contacts file
+[] Destroy contacts on index with javascript
+[] Filter only .com email addresses
+[] Order contacts alphabetically by email
+[] Deploy with Heroku
