@@ -5,6 +5,10 @@
 
   <h1>Contacts</h1>
 
+  <%= render 'contacts_search_filter' %>
+
+  <%= render 'import_csv' %>
+
   <table class='table'>
     <thead>
       <tr>
@@ -32,19 +36,5 @@
       <% end %>
     </tbody>
   </table>
-
-  <div class='row'>
-    <div class='col-md-12'>
-      <%= form_tag csv_upload_contacts_path, multipart: true do %>
-        <%= file_field_tag :file %> 
-        <br>
-        <br>
-        <%= submit_tag "Import Contact CSV", class: 'btn btn-success' %>
-      <% end %>
-    </div>
-  </div>
-</div>
-
   <%= link_to 'New Contact', new_contact_path %>
-<!-- container end -->
 </div>

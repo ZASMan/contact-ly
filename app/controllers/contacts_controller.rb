@@ -2,7 +2,9 @@ class ContactsController < ApplicationController
   before_action :set_contact, only: [:show, :edit, :update, :destroy]
 
   def index
-    @contacts = Contact.all
+    @q = Contact.ransack(params[:q])
+    @q.sorts = 'email_address asc' if @q.sorts.empty?
+    @contacts = @q.result
   end
 
   def show
@@ -13,6 +15,14 @@ class ContactsController < ApplicationController
   end
 
   def edit
+  end
+
+  def email_address_alphabetical_filter
+    # Should filter contacts by email address alphabetically.
+  end
+
+  def email_com_address_filter
+    # Should only display contacts with .com email addresses
   end
 
   def csv_upload

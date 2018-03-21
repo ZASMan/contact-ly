@@ -1,0 +1,24 @@
+<div class="card">
+  <div class="card-body">
+    <div class="card-title justify-content-center">
+      Filter Contacts List
+    </div>
+
+    <%= search_form_for @q, class: "form-inline" do |f| %>
+      <div class='row'>
+        <div class='col-md-12'>
+          <div class="top-whitespace">
+            <%= f.label :email_address_cont, "Search by .com (or other) email addresses" %>
+            <%= f.search_field :email_address_cont, class: 'form-control', id: 'q_description_cont', value: ".com" %> <br>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class='col-md-12'>
+          <%= f.submit "Apply", class: "btn btn-primary", id: 'button-apply' %> <br>
+          <%= link_to "Clear Filters", contacts_path, class: 'btn btn-success', id: 'button-clear', style: 'color: #ffffff' %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
