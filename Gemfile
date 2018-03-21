@@ -36,6 +36,10 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem "factory_bot_rails", "~> 4.8.2", require: false # (Critical) Generates factories for tests.
+  gem "pry-byebug" # (Optional) Enhance pry with byebug (which gives more debugger commands and other goodies).
+  gem "pry-rails" # (Optional) Replace pry with irb for "rails c" and make pry available for debugging the app.
+  gem "rspec-rails", "~> 3.7.0" # (Critical) Configures Rails to use rspec.
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
