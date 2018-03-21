@@ -8,12 +8,16 @@ class ContactsController < ApplicationController
   def show
   end
 
-  # GET /contacts/new
   def new
     @contact = Contact.new
   end
 
   def edit
+  end
+
+  def csv_upload
+    Contact.csv_upload(params[:file])
+    redirect_to contacts_path, notice: "Contacts Uploaded."
   end
 
   def create

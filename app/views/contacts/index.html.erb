@@ -30,6 +30,10 @@
   </tbody>
 </table>
 
+<%= form_tag csv_upload_contacts_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "Import Contact CSV" %>
+<% end %>
 <br>
 
 <%= link_to 'New Contact', new_contact_path %>
