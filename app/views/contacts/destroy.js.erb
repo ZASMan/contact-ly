@@ -1,0 +1,3 @@
+var contact_row = document.getElementById("row-for-contact-<%= contact.id %>")
+contact_row.parentNode.removeChild(contact_row);
+console.log("Contact row with id" + "<%= contact.id %>" + "destroyed.");
