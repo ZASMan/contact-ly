@@ -37,12 +37,12 @@ Your application *does not* need to handle authentication or authorization.
 
 
 ##### Checklist
-[x] Upload via web form
-[x] Create all contacts
-[x] Display all contacts
-[x] Specs for contacts file
-[X] Destroy contacts on index with javascript
-[X] Filter only .com email addresses
-[X] Order contacts alphabetically by email
-[x] Test all features
-[] Deploy with Heroku
+- [x] Upload via web form
+- [x] Create all contacts
+- [x] Display all contacts
+- [x] Specs for contacts file
+- [X] Destroy contacts on index with javascript
+- [X] Filter only .com email addresses
+- [X] Order contacts alphabetically by email
+- [x] Test all features
+- [X] Deploy with Heroku
