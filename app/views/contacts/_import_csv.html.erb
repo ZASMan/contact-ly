@@ -3,6 +3,7 @@
     <div class='row'>
       <div class='col-md-12'>
         <%= form_tag csv_upload_contacts_path, multipart: true do %>
+          <% label_tag :file %>
           <%= file_field_tag :file %> 
           <br>
           <br>

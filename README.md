@@ -44,5 +44,5 @@ Your application *does not* need to handle authentication or authorization.
 [X] Destroy contacts on index with javascript
 [X] Filter only .com email addresses
 [X] Order contacts alphabetically by email
-[] Test all features
+[x] Test all features
 [] Deploy with Heroku

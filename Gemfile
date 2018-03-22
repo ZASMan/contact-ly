@@ -44,8 +44,9 @@ group :development, :test do
   gem "pry-rails" # (Optional) Replace pry with irb for "rails c" and make pry available for debugging the app.
   gem "rspec-rails", "~> 3.7.0" # (Critical) Configures Rails to use rspec.
   # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '~> 2.13'
+  gem 'capybara'
   gem 'selenium-webdriver'
+  gem 'capybara-screenshot'
 end
 
 group :development do
